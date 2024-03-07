@@ -1,0 +1,430 @@
+Find what you need faster … Home is your new landing page and surfaces your most relevant files and folders
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 100%;
+    background-color: #c0d5e8;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    
+  }
+
+  .urbanist {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+  }
+
+  .image-holder{
+    width:5em;
+    object-fit:cover;
+  }
+
+  img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:50% 50%;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .bumper {
+    text-align: center;
+    padding: 128px 16px;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .space-holder {
+    position: relative;
+    width: 100%;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+    background-color: #5ba4d7;
+  }
+
+  .horizontal.animbase {
+    background-color: #5ba4d7;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+
+  .horizontal.anim0 {
+    background-color: #86edfc;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+
+  .horizontal.anim1 {
+    background-color: #fc93ff;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+
+  .horizontal.anim2 {
+    background-color: #989ffb;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+
+  .horizontal.anim3 {
+    background-color: #d3dada;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+
+  .horizontal.anim4 {
+    background-color: #f68ca8;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+
+  .horizontal.anim5 {
+    background-color: #95f5dc;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+  
+  .cards {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .sees {
+    position:relative;
+    width: 704px;
+    fill: white;
+    margin-top: 0px;
+    margin-right: 125px;
+    flex-shrink: 0;
+  }
+  .sample-card {
+    position:relative;
+    background-color: white;
+    height: 770.453px;
+    width: 577.844px;
+    margin-right: 200px;
+    flex-shrink: 0;
+  }
+
+  .chara-text > p,
+  .chara-text2 > p {
+    font-size: 12px;
+    color: white;
+    font-family: "urbanist";
+    font-size:20px;
+  }
+
+  .chara-text,
+.chara-text2 {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+/* .chara-text > p, .chara-text2 > p {
+    position: relative;
+    height: 42px;
+    line-height: 2.1;
+    letter-spacing: 0.8px;
+    overflow: hidden;
+  }
+
+.chara-text > p span, .chara-text2 > p span {
+      display: block;
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+
+.chara-text > p .l1.run, .chara-text2 > p .l1.run {
+      -webkit-animation: fadeInText2 1s ease-out both;
+              animation: fadeInText2 1s ease-out both;
+    }
+
+.chara-text > p .l2.run, .chara-text2 > p .l2.run {
+      -webkit-animation: fadeInText2 1s ease-out 0.3s both;
+              animation: fadeInText2 1s ease-out 0.3s both;
+    }
+
+.chara-text > p .l3.run, .chara-text2 > p .l3.run {
+      -webkit-animation: fadeInText2 1s ease-out 0.6s both;
+              animation: fadeInText2 1s ease-out 0.6s both;
+    } */
+
+  .bg-text {
+    position: relative;
+    width: 100vw;
+    padding-bottom: calc(377 / 1914 * 100vw);
+    opacity: 0.15;
+  }
+  
+  .bg-text svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+  .bg-text svg.active .svg-elem-1 {
+          opacity: 1;
+          stroke-dashoffset: 0;
+        }
+  
+  .bg-text svg.active .svg-elem-2 {
+          opacity: 1;
+          stroke-dashoffset: 0;
+        }
+  
+  .bg-text svg.active .svg-elem-3 {
+          opacity: 1;
+          stroke-dashoffset: 0;
+        }
+  
+  .bg-text svg.active .svg-elem-4 {
+          opacity: 1;
+          stroke-dashoffset: 0;
+        }
+  
+  .bg-text svg.active .svg-elem-5 {
+          opacity: 1;
+          stroke-dashoffset: 0;
+        }
+  
+  .bg-text svg.active .svg-elem-6 {
+          opacity: 1;
+          stroke-dashoffset: 0;
+        }
+
+        .bg-text .cls-1 {
+          fill: none;
+          stroke: #1d384a;
+          stroke-miterlimit: 10;
+          stroke-width: 2px;
+        }
+      
+      .bg-text .svg-elem-1 {
+          opacity: 0;
+          stroke-dashoffset: 2231.653564453125px;
+          stroke-dasharray: 2231.653564453125px;
+          -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, opacity 0.5s ease-out 0s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, opacity 0.5s ease-out 0s;
+        }
+      
+      .bg-text .svg-elem-2 {
+          opacity: 0;
+          stroke-dashoffset: 2274.000244140625px;
+          stroke-dasharray: 2274.000244140625px;
+          -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s, opacity 0.5s ease-out 0.12s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s, opacity 0.5s ease-out 0.12s;
+        }
+      
+      .bg-text .svg-elem-3 {
+          opacity: 0;
+          stroke-dashoffset: 1443.9835205078125px;
+          stroke-dasharray: 1443.9835205078125px;
+          -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s, opacity 0.5s ease-out 0.24s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s, opacity 0.5s ease-out 0.24s;
+        }
+      
+      .bg-text .svg-elem-4 {
+          opacity: 0;
+          stroke-dashoffset: 2106.967041015625px;
+          stroke-dasharray: 2106.967041015625px;
+          -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s, opacity 0.5s ease-out 0.36s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s, opacity 0.5s ease-out 0.36s;
+        }
+      
+      .bg-text .svg-elem-5 {
+          opacity: 0;
+          stroke-dashoffset: 1913.166259765625px;
+          stroke-dasharray: 1913.166259765625px;
+          -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s, opacity 0.5s ease-out 0.48s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s, opacity 0.5s ease-out 0.48s;
+        }
+      
+      .bg-text .svg-elem-6 {
+          opacity: 0;
+          stroke-dashoffset: 2266.784912109375px;
+          stroke-dasharray: 2266.784912109375px;
+          -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s, opacity 0.5s linear 0.6s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s, opacity 0.5s linear 0.6s;
+        }
+
+
+       @-webkit-keyframes fadeOut {
+          0% {opacity: 1;}
+          100% {opacity: 0;}
+       }
+       
+       @keyframes fadeOut {
+          0% {opacity: 1;}
+          100% {opacity: 0;}
+       }
+       
+       .fadeOut {
+          -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+          -webkit-animation-duration: 10s;animation-duration: 10s;
+          -webkit-animation-fill-mode: both;animation-fill-mode: both;
+       }
+
+
+       .chara-title .cls-1, .chara-title2 .cls-1 {
+    fill: #fff;
+    -webkit-transition: 500ms ease-out;
+    transition: 500ms ease-out;
+  }
+
+.chara-title svg path:nth-child(1), .chara-title2 svg path:nth-child(1) {
+          opacity: 0;
+          -webkit-transform: translateY(110px);
+                  transform: translateY(110px);
+        }
+
+.chara-title svg path:nth-child(2), .chara-title2 svg path:nth-child(2) {
+          opacity: 0;
+          -webkit-transform: translateY(110px);
+                  transform: translateY(110px);
+        }
+
+.chara-title svg path:nth-child(3), .chara-title2 svg path:nth-child(3) {
+          opacity: 0;
+          -webkit-transform: translateY(110px);
+                  transform: translateY(110px);
+        }
+
+.chara-title svg path:nth-child(4), .chara-title2 svg path:nth-child(4) {
+          opacity: 0;
+          -webkit-transform: translateY(110px);
+                  transform: translateY(110px);
+        }
+
+.chara-title svg path:nth-child(5), .chara-title2 svg path:nth-child(5) {
+          opacity: 0;
+          -webkit-transform: translateY(110px);
+                  transform: translateY(110px);
+        }
+
+.chara-title svg path:nth-child(6), .chara-title2 svg path:nth-child(6) {
+          opacity: 0;
+          -webkit-transform: translateY(110px);
+                  transform: translateY(110px);
+        }
+
+.chara-title svg path:nth-child(7), .chara-title2 svg path:nth-child(7) {
+          opacity: 0;
+          -webkit-transform: translateY(110px);
+                  transform: translateY(110px);
+        }
+
+.chara-title svg path:nth-child(8), .chara-title2 svg path:nth-child(8) {
+          opacity: 0;
+          -webkit-transform: translateY(110px);
+                  transform: translateY(110px);
+        }
+
+.chara-title.run svg path:nth-child(1), .chara-title2.run svg path:nth-child(1) {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-transition-delay: calc(1 * 50ms);
+                    transition-delay: calc(1 * 50ms);
+          }
+
+.chara-title.run svg path:nth-child(2), .chara-title2.run svg path:nth-child(2) {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-transition-delay: calc(2 * 50ms);
+                    transition-delay: calc(2 * 50ms);
+          }
+
+.chara-title.run svg path:nth-child(3), .chara-title2.run svg path:nth-child(3) {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-transition-delay: calc(3 * 50ms);
+                    transition-delay: calc(3 * 50ms);
+          }
+
+.chara-title.run svg path:nth-child(4), .chara-title2.run svg path:nth-child(4) {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-transition-delay: calc(4 * 50ms);
+                    transition-delay: calc(4 * 50ms);
+          }
+
+.chara-title.run svg path:nth-child(5), .chara-title2.run svg path:nth-child(5) {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-transition-delay: calc(5 * 50ms);
+                    transition-delay: calc(5 * 50ms);
+          }
+
+.chara-title.run svg path:nth-child(6), .chara-title2.run svg path:nth-child(6) {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-transition-delay: calc(6 * 50ms);
+                    transition-delay: calc(6 * 50ms);
+          }
+
+.chara-title.run svg path:nth-child(7), .chara-title2.run svg path:nth-child(7) {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-transition-delay: calc(7 * 50ms);
+                    transition-delay: calc(7 * 50ms);
+          }
+
+.chara-title.run svg path:nth-child(8), .chara-title2.run svg path:nth-child(8) {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-transition-delay: calc(8 * 50ms);
+                    transition-delay: calc(8 * 50ms);
+          }
