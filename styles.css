@@ -1,4 +1,4 @@
-Find what you need faster … Home is your new landing page and surfaces your most relevant files and folders
+
 *, *::before, *::after {
     box-sizing: inherit;
   }
@@ -427,4 +427,5 @@ Find what you need faster … Home is your new landing page and surfaces your mo
                     transform: translateY(0);
             -webkit-transition-delay: calc(8 * 50ms);
                     transition-delay: calc(8 * 50ms);
+
           }
